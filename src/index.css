@@ -1,0 +1,46 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Segoe UI", system-ui, Roboto, sans-serif;
+  --font-mono: ui-monospace, "Cascadia Code", Consolas, monospace;
+}
+
+html {
+  color-scheme: dark;
+}
+
+body {
+  margin: 0;
+  @apply bg-slate-950 text-slate-100;
+}
+
+* {
+  scrollbar-width: thin;
+  scrollbar-color: #475569 transparent;
+}
+*::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+*::-webkit-scrollbar-track {
+  background: transparent;
+}
+*::-webkit-scrollbar-thumb {
+  background-color: #475569;
+  border-radius: 9999px;
+}
+
+button:not(:disabled),
+[role="button"],
+a[href],
+select,
+summary,
+label[for],
+input[type="checkbox"],
+input[type="radio"] {
+  cursor: pointer;
+}
+
+.model-swatch {
+  background-color: var(--swatch-color);
+}
